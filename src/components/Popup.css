@@ -1,0 +1,96 @@
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(6px);
+}
+
+.popup.open {
+  display: flex;
+}
+
+.popup-content  {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Set the direction to column */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Popup.css */
+.close-icon > .MuiSvgIcon-root {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+h2{
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 0;
+}
+h3{
+  font-weight: 300;
+  width: 100%;
+  margin-top: 5px;
+}
+label,
+input,
+textarea {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input {
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+  border-radius: 10px;
+}
+
+.popup__button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.popup__cancel , .popup__submit{
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.popup__cancel {
+  background-color: #fff;
+  color: black;
+  border: 1px solid lightgray;
+}
+
+.popup__submit {
+  background-color: #4caf50; 
+}
