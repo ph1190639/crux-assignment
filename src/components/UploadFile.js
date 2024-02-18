@@ -104,7 +104,7 @@ function UploadFile() {
           onChange={(e) => setRole(e.target.value)}
         />
 
-        <label htmlFor="jobDescription">Job Description*:</label>
+        <label  htmlFor="jobDescription">Job Description*:</label>
         <textarea
           id="jobDescription"
           name="jobDescription"
